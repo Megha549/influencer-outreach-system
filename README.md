@@ -1,4 +1,4 @@
-# Automated Micro-Influencer Outreach System (v2)
+# Automated Micro-Influencer Outreach System
 
 A working prototype of an end-to-end pipeline that discovers micro-influencers,
 filters/classifies them, enriches their profiles, generates AI-personalized
