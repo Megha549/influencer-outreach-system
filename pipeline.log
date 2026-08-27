@@ -1,0 +1,44 @@
+2026-08-27 08:22:11 | INFO    | main            | === 1. Discovery (niche=Beauty & Fashion, target n=60) ===
+2026-08-27 08:22:11 | INFO    | kaggle_loader   | Loaded 66 real influencer records from Kaggle CSV (niche-matched); skipped 934 non-matching rows.
+2026-08-27 08:22:11 | INFO    | discovery       | Kaggle CSV matched 66 real profiles; capping to 20 so the discovered pool still has room for micro-range profiles that can carry the pipeline through to enrichment/personalization/sending.
+2026-08-27 08:22:11 | INFO    | discovery       | Discovery via Kaggle real dataset: 20 real profiles loaded
+2026-08-27 08:22:11 | INFO    | discovery       | Topped up with 40 simulated profiles to reach target of 60
+2026-08-27 08:22:11 | INFO    | discovery       | Discovery complete: 60 total profiles (20 real, 40 simulated)
+2026-08-27 08:22:11 | INFO    | main            | === 2. Filtering & Classification ===
+2026-08-27 08:22:11 | INFO    | filtering       | Classified 60 profiles -> Passed: 25, Failed: 35
+2026-08-27 08:22:11 | INFO    | main            | === 3. Profile Enrichment ===
+2026-08-27 08:22:11 | INFO    | enrichment      | Enriched 25 shortlisted profiles (18 with valid email)
+2026-08-27 08:22:11 | INFO    | main            | === 4. AI Personalization ===
+2026-08-27 08:22:11 | INFO    | personalization | Personalization backend: RuleBasedGenerator (offline fallback)
+2026-08-27 08:22:11 | INFO    | personalization | Generated messages for 25 profiles via RuleBasedGenerator
+2026-08-27 08:22:11 | INFO    | main            | === 5. Sending Layer ===
+2026-08-27 08:22:11 | INFO    | sender          | Sending backend: SimulatedSender (offline fallback)
+2026-08-27 08:22:11 | INFO    | sender          | Processed 25 outreach candidates -> Sent: 16, Other: 9
+2026-08-27 08:22:11 | INFO    | main            | === 6. Writing deliverables to /output ===
+2026-08-27 08:22:11 | INFO    | main            | Done. Deliverables written to /output:
+2026-08-27 08:22:11 | INFO    | main            |   - influencer_dataset.csv
+2026-08-27 08:22:11 | INFO    | main            |   - shortlisted_enriched.csv
+2026-08-27 08:22:11 | INFO    | main            |   - personalized_messages.csv
+2026-08-27 08:22:11 | INFO    | main            |   - outreach_tracker.csv
+2026-08-27 08:22:11 | INFO    | main            |   - outreach_db_export.csv
+2026-08-27 13:55:17 | INFO    | main            | Fresh run: cleared outreach.db
+2026-08-27 13:55:17 | INFO    | main            | === 1. Discovery (niche=Beauty & Fashion, target n=60) ===
+2026-08-27 13:55:17 | INFO    | discovery       | Topped up with 60 simulated profiles to reach target of 60
+2026-08-27 13:55:17 | INFO    | discovery       | Discovery complete: 60 total profiles (0 real, 60 simulated)
+2026-08-27 13:55:17 | INFO    | main            | === 2. Filtering & Classification ===
+2026-08-27 13:55:17 | INFO    | filtering       | Classified 60 profiles -> Passed: 32, Failed: 28
+2026-08-27 13:55:17 | INFO    | main            | === 3. Profile Enrichment ===
+2026-08-27 13:55:17 | INFO    | enrichment      | Enriched 32 shortlisted profiles (24 with valid email)
+2026-08-27 13:55:17 | INFO    | main            | === 4. AI Personalization ===
+2026-08-27 13:55:17 | INFO    | personalization | Personalization backend: RuleBasedGenerator (offline fallback)
+2026-08-27 13:55:17 | INFO    | personalization | Generated messages for 32 profiles via RuleBasedGenerator
+2026-08-27 13:55:17 | INFO    | main            | === 5. Sending Layer ===
+2026-08-27 13:55:17 | INFO    | sender          | Sending backend: SimulatedSender (offline fallback)
+2026-08-27 13:55:18 | INFO    | sender          | Processed 32 outreach candidates -> Sent: 19, Other: 13
+2026-08-27 13:55:18 | INFO    | main            | === 6. Writing deliverables to /output ===
+2026-08-27 13:55:18 | INFO    | main            | Done. Deliverables written to /output:
+2026-08-27 13:55:18 | INFO    | main            |   - influencer_dataset.csv
+2026-08-27 13:55:18 | INFO    | main            |   - shortlisted_enriched.csv
+2026-08-27 13:55:18 | INFO    | main            |   - personalized_messages.csv
+2026-08-27 13:55:18 | INFO    | main            |   - outreach_tracker.csv
+2026-08-27 13:55:18 | INFO    | main            |   - outreach_db_export.csv
